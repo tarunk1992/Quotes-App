@@ -1,0 +1,89 @@
+# Write your query or mutation here
+Query getAllUsers {
+  users{
+    _id
+    firstName
+    lastName
+    email
+    password
+  }
+  
+}
+
+
+
+query getAllQuotes{
+quotes{
+  name
+  by
+}
+}
+
+
+query getUserByid{
+  user(_id:"2"){
+    _id
+    firstName
+    lastName
+    email
+
+    
+  }
+}
+
+
+query getQuoteByUser{
+  iquote(by:"2"){
+  name
+   by
+    
+  }
+}
+
+query getQuoteByUser($quoteby:ID!){
+  iquote(by:$quoteby){
+  name
+   by
+    
+  }
+}
+
+query getUsersById($userid:ID!) {
+  user(_id:$userid){
+    _id
+    firstName
+    lastName
+    email
+    password
+  }
+  
+}
+
+mutation createUser($userNew:UserInput!){
+ user: signupUserDummy(userNew:$userNew){
+    _id
+    firstName
+    lastName
+    email
+    
+  }
+}
+
+mutation createUser($userNew:UserInput!){
+ user: signupUser(userNew:$userNew){
+    _id
+    firstName
+    lastName
+    email
+  password
+    
+  }
+}
+
+
+mutation signinUser($userSignin:UserSigninInput!){
+ user: signinUser(userSignin:$userSignin){
+    token
+    
+  }
+}
