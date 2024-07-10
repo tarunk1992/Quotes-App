@@ -1,0 +1,377 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.Link{
+  text-decoration: none;
+}
+.pageNot{
+  text-align: center;
+  margin-top: 50px;
+}
+.navbar{
+   
+    background-color: rgb(113, 113, 240);
+    height: 60px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.nav-contain{
+  display: flex;
+  align-items: center;
+   justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.navbar .nav-logo{
+
+}
+.navbar .nav-logo h1{
+  color:white;
+  font-size: 36px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: auto;
+}
+.navbar .nav-link ul li .Link{
+ position: relative;
+}
+.navbar .nav-link ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  /* margin:0  50px 0 0; */
+  
+ 
+}
+.navbar .nav-link ul li .Link::before{
+position: absolute;
+content: "";
+height: 2px;
+background-color: yellow;
+width: 0;
+bottom: 0;
+left:  10px;
+transition: all .3s ease;
+}
+.navbar .nav-link ul li .Link:hover::before{
+  width: 85%;
+}
+.navbar .nav-link ul li{
+  position: relative;
+  color: white;
+  padding-left: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  text-decoration: none;
+  cursor: pointer;
+ 
+}
+.navbar .nav-link ul li Button{
+ margin-left: 20px;
+}
+.Home {
+  margin-top: 50px;
+}
+.Home blockquote{
+ width: 60%;
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   margin-left: 50px  ;
+   margin-bottom: 30px;
+   padding: 20px 0 0 20px ;
+}
+.Home blockquote h6{
+  font-size: 20px;
+  max-width: 500px;
+  font-family: emoji;
+}
+.Home blockquote p{
+ text-align: end;
+ margin-right: 10px;
+   font-size: 14px;
+  color: rgb(57, 57, 180);
+  font-weight: 500;
+}
+.Home blockquote p .Link{
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.signup{
+  
+}
+.signup .card-panel .red{
+  background-color: red;
+  font-size: 14px;
+  width: 500px;
+  height: 20px;
+}
+.signup .card-panel .green{
+  background-color: red;
+  font-size: 54px;
+  width: 500px;
+  height: 20px;
+}
+.signup Form Button{
+  width: 100%;
+}
+.signup Form h5{
+  text-align: center;
+ padding-bottom: 20px;
+ padding-top: 5px;
+}
+.signup Form {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding:0 40px 40px  40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 370px;
+}
+
+.signup Form Form.Control{
+  width: 15px;
+}
+.signup {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login Form Button{
+  width: 100%;
+}
+.login Form h5{
+  text-align: center;
+ padding-bottom: 20px;
+ padding-top: 5px;
+}
+.login Form {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding:0 40px 40px  40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 370px;
+}
+
+.login {
+ 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.createQuotes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.createQuotes form{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: rgb(228, 228, 235);
+  padding:0 40px 40px  40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 600px;
+
+}
+.createQuotes form textarea{
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+     width: 500px;
+     height: 150px;
+     margin-top: 30px;
+     border: none;
+     padding: 20px;
+     outline: none;
+}
+
+.otherprofile
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+ 
+  
+}
+
+.otherprofile .contain
+{
+
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  width: 500px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.otherprofile img{
+  border-radius: 50%;
+  background-color: burlywood;
+  width: 200px;
+  height: 200px;
+  margin-left:25%  ;
+  border: 1px solid black;
+}
+.otherprofile h5{
+  font-size: 18px;
+  margin-top: 10px;
+}
+.otherprofile h3{
+ color: white;
+ background-color: blue;
+ padding: 5px 30px;
+ border-radius: 10px;
+ margin-top: 20px;
+}
+.otherprofile blockquote {
+  border-bottom: 2px solid gainsboro;
+  max-width: 400px;
+  margin-top: 30px;
+}
+
+.visible{
+ margin-left: 260px;
+  margin-top: -32px;
+}
+
+
+/* //mediaQuery// */
+
+
+@media (min-width: 1536px) {
+  
+}
+
+@media (max-width: 1440px) {
+ 
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 1366px) {
+    
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 991px) {
+  .Home blockquote{
+    width: 80%;
+    margin-left: 20px;
+  }
+
+}
+
+@media (min-width: 768px) {
+ 
+}
+
+@media (max-width: 768px){
+  .Home blockquote h6{
+    font-size: 18px;
+    
+  }
+    .navbar .nav-link ul li Button{
+    padding: 5px;
+    font-size: 14px;
+  }
+  .navbar .nav-link ul li{
+    
+    padding-left: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+
+   
+  }
+  .navbar .nav-logo h1{
+
+  font-size: 30px;
+
+ 
+
+}
+}
+
+@media (min-width: 767px){
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 576px) {
+  .visible{
+    margin-left: 190px;
+     margin-top: -32px;
+   }
+  .Home blockquote{
+    width: 90%;
+    margin-left: 15px;
+  }
+  .navbar .nav-logo h1{
+    position: absolute;
+   top: 12px;
+  font-size: 30px;
+}
+   .navbar .nav-link ul li Button{
+   margin-left: 10px;
+  }
+  .otherprofile .contain
+{
+
+
+  width: 350px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.createQuotes form{
+
+  padding:0 20px 20px  20px;
+  margin-top: 20px;
+
+  width: 350px;
+
+}
+.createQuotes form textarea{
+  
+     width: 300px;
+     height: 100px;
+     margin-top: 20px;
+     border: none;
+     padding: 10px;
+     outline: none;
+}
+.login Form {
+ 
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+.signup Form {
+ 
+
+  width: 300px;
+}
+
+
+}
