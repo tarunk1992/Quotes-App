@@ -51,15 +51,7 @@ if(error){
 
  
       
-      {/* <form onSubmit={handleSubmit}> 
-        <input type='email' name='email' placeholder='email'  required onChange={handleChange}></input>
-        <br></br>
-        <br></br>
-        <input type='password' name='password' placeholder='password' required onChange={handleChange}></input>
-        <br></br>
-        <br></br>
-       
-        <Button variant="primary" className='btn' type='submit'>Login</Button> */}
+      
       <Form onSubmit={handleSubmit}>
       <h5>Login</h5>
       <Form.Group className="mb-3" controlId="formBasicEmail">
