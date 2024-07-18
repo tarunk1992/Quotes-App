@@ -17,7 +17,7 @@ export default function Signup() {
 const [signupUser,{data,loading,error}] = useMutation(SIGNUP_USER)
 if(loading) return <h3>Loading...</h3>
 if (data){
- 
+    console.log(data)
   // history("/")
 }
 

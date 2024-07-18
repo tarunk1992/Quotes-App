@@ -59,7 +59,7 @@ password:hashedPassword
          by:userId
     })
 await newQuote.save()
-return "Quote save successfullt"
+return "Quote save successfully"
          }
 }
 }
