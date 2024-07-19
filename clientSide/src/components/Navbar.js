@@ -16,7 +16,7 @@ const [sideBar,setSideBar]= useState(false)
     function logout(){
         localStorage.removeItem("token");
      
-        history('/login')
+        history('/')
         
     }
 
@@ -47,6 +47,7 @@ const [sideBar,setSideBar]= useState(false)
                 </>
                 :
                 <>
+                
                     <li> <Link className='Link'  to='/login'><li>Login</li></Link></li>
                      <li><Link className='Link'  to='/signup'><li>Signup</li></Link></li>
                 </>

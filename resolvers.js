@@ -1,4 +1,4 @@
-import { users,quotes } from "./fakedata.js";
+
 import {randomBytes} from 'crypto'
 import mongoose from "mongoose";
 import jwt  from 'jsonwebtoken'

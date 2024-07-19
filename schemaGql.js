@@ -37,13 +37,15 @@ type User{
      firstName:String!
     by:ID!
     }
+
+    
     type Token{
     token:String!
    
    
     }
     type Mutation{
-    signupUser(userNew:UserInput!):User,
+    signupUser(userNew:UserInput!):User
     signinUser(userSignin:UserSigninInput!):Token
     creatQuote(name:String!):String
     }
