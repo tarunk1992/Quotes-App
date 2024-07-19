@@ -2,28 +2,30 @@ import { useMutation } from '@apollo/client';
 import React, { useState } from 'react';
 import { IoMdEye } from "react-icons/io";
 import { IoMdEyeOff } from "react-icons/io";
+
+
 import { Link,useNavigate } from 'react-router-dom';
 import { LOGIN_USER, SIGNUP_USER  } from '../gqloperations/mutation';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 
-export default function Login() {
+export default function Signin() {
    const [formData,setFormData] = useState({})
    const [visible,setVisible] = useState(false);
    const history = useNavigate();
 
    
 
-   const [signinUser,{error,loading,data}] = useMutation(LOGIN_USER,{
-    onCompleted(data){
-      localStorage.setItem("token",data.user.token)
-      
-      history("/")
-    }
-   })
+   const [signinUser,{error,loading,data}] = useMutation(LOGIN_USER)
 if(loading) return <h3>Loading...</h3>
+if (data){
+  localStorage.setItem("token",data.user.token)
+  window.location.reload();
+  history("/")
+  
 
+}
 if(error){
   console.log(error)
 }
@@ -49,7 +51,7 @@ if(error){
 
  
       
-      
+  
       <Form onSubmit={handleSubmit}>
       <h5>Login</h5>
       <Form.Group className="mb-3" controlId="formBasicEmail">

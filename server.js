@@ -24,8 +24,8 @@ if(process.env.NODE_ENV !=="production"){
 
 
 mongoose.connect(process.env.MONGO_URI,{
-  // useNewUrlParser:true,
-  // useUnifiedTopology:true,
+  useNewUrlParser:true,
+  useUnifiedTopology:true,
 })
 
 mongoose.connection.on("connected",()=>{
@@ -42,7 +42,7 @@ import './Models/Quotes.js';
 import resolvers from "./resolvers.js";
 
 const context = ({req})=>{
-  const {authorization} = req.headers
+  const {authorization} = req.headers;
   if(authorization){
    const {userId}=  jwt.verify(authorization,process.env.JWT_SECRET)
    return {userId}
@@ -59,13 +59,13 @@ const server = new ApolloServer({
     ]
 })
 
-if(process.env.NODE_ENV=="production"){
+// if(process.env.NODE_ENV=="production"){
   app.use(express.static('clientSide/build'))
 
-  app.get("/",(req,res)=>{
+  app.get("*",(req,res)=>{
     res.sendFile(path.resolve(__dirname,'clientSide','build','index.html'))
   })
-}
+// }
 
 
 

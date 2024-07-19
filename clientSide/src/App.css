@@ -77,7 +77,8 @@ transition: all .3s ease;
  margin-left: 20px;
 }
 .Home {
-  margin-top: 50px;
+  padding-top: 50px;
+  background-color: ghostwhite;
 }
 .Home blockquote{
  width: 60%;
@@ -85,6 +86,7 @@ transition: all .3s ease;
    margin-left: 50px  ;
    margin-bottom: 30px;
    padding: 20px 0 0 20px ;
+   background-color: white;
 }
 .Home blockquote h6{
   font-size: 20px;
