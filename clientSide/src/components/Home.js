@@ -12,11 +12,13 @@ export default function Home() {
   })
   if(loading) return <h3>Loading...</h3>
 
+  const reversedData = [...data.quotes].reverse();
 console.log("my data",data)
+console.log("my data",reversedData)
   return (
     <div className='Home'>
        {
-        data.quotes.map(quote=>{
+        reversedData.map(quote=>{
  return(
                
             <blockquote>

@@ -12,7 +12,7 @@
   margin-top: 50px;
 }
 .navbar{
-   
+
     background-color: rgb(113, 113, 240);
     height: 60px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -78,12 +78,15 @@ transition: all .3s ease;
 }
 .Home {
   padding-top: 50px;
+  padding-bottom:50px;
   background-color: ghostwhite;
+  
 }
 .Home blockquote{
  width: 60%;
  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
    margin-left: 50px  ;
+   padding-bottom: 50px;
    margin-bottom: 30px;
    padding: 20px 0 0 20px ;
    background-color: white;
@@ -101,7 +104,7 @@ transition: all .3s ease;
   font-weight: 500;
 }
 .Home blockquote p .Link{
-  text-decoration: none;
+  text-decoration:none ;
   color: gray;
   font-size: 14px;
   font-weight: 400;
@@ -322,6 +325,29 @@ transition: all .3s ease;
 }
 
 @media (max-width: 576px) {
+
+  .Home blockquote p{
+
+      font-size: 12px;
+    
+   }
+   .Home blockquote p .Link{
+
+    font-size: 12px;
+  
+ }
+
+  .otherprofile blockquote {
+  font-size: 16px;
+  font-weight: 200;
+  }
+
+  .Home blockquote h6{
+    font-size: 18px;
+     font-weight: 300;
+  
+  }
+  
   .visible{
     margin-left: 190px;
      margin-top: -32px;
@@ -375,5 +401,12 @@ transition: all .3s ease;
   width: 300px;
 }
 
+.navbar .nav-link ul li{
+ 
+  font-size: 14px;
+  font-weight: 500;
+ 
+ 
+}
 
 }

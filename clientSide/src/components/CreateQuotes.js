@@ -40,7 +40,7 @@ const handleSubmit = (e)=>{
         data && <div>{data.quote}</div>
       }
      <form onSubmit={handleSubmit}>
-     <textarea type='text' value={quote} onChange={(e)=>setQuote(e.target.value)} placeholder='Write your quote here'></textarea>
+     <textarea type='text' value={quote} minLength="20" onChange={(e)=>setQuote(e.target.value)} placeholder='Write your quote here'></textarea>
     <br></br>
     <br></br>
     <Button variant="primary" className='btn' type='submit'>Create</Button>
