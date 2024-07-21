@@ -20,8 +20,8 @@ export default function OtherProfile() {
     <div className='otherprofile'>
       <div className='contain'> 
         <img src={`https://robohash.org/${data.user.firstName}.png`} alt='pic'></img>
-        <h5>Name - {data.user.firstName} {data.user.lastName}</h5>
-        <h5>Email - {data.user.email}</h5>
+        <h5>Name :- {data.user.firstName} {data.user.lastName}</h5>
+        <h5>Email id :-  {data.user.email}</h5>
       
       <h3>{data.user.firstName} Quotes</h3>
 {

@@ -18,7 +18,7 @@ export default function Login() {
    const [signinUser,{error,loading,data}] = useMutation(LOGIN_USER,{
     onCompleted(data){
       localStorage.setItem("token",data.user.token)
-      
+      window.location.reload()
       history("/")
     }
    })

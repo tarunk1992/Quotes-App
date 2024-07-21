@@ -28,7 +28,7 @@ export default function Routings() {
   <Route path='/signup' element={<Signup></Signup>}></Route>
   <Route path='/create'  element={<Protector Cmp={CreateQuotes}></Protector>}> </Route>
   <Route path='/' element={<Home></Home>}></Route>
-  <Route path='/otherprofile/:userid' element={<Protector Cmp={OtherProfile}></Protector>} > </Route>
+  <Route path='/otherprofile/:userid' element={<OtherProfile></OtherProfile>} > </Route>
   <Route path='*' element={<Page404></Page404>}></Route>
 </Routes>
 </BrowserRouter>
