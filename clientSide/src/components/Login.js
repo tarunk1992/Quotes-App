@@ -19,8 +19,8 @@ export default function Login() {
 
    if(data){
     localStorage.setItem("token",data.user.token)
-    window.location.reload()
-    history("/")
+    
+   history('/')
   }
 if(loading) return <h3>Loading...</h3>
 
@@ -72,7 +72,7 @@ if(error){
         <Form.Check type="checkbox" label="Check me out" required/>
       </Form.Group>
       <Link to="/signup"><p>Don't have an account ?</p></Link>
-      <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit">
         Submit
       </Button>
     </Form>

@@ -70,6 +70,7 @@ if(process.env.NODE_ENV=="production"){
 
 
 
+
 await server.start();
 server.applyMiddleware({ app,
   path:'/graphql'
