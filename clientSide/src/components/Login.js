@@ -15,13 +15,15 @@ export default function Login() {
 
    
 
-   const [signinUser,{error,loading,data}] = useMutation(LOGIN_USER)
+   const [signinUser,{error,loading,data}] = useMutation(LOGIN_USER,{
+  
+    onCompleted(data){
+      localStorage.setItem("token",data.user.token)
+      history('/')
+    }
+   })
 
-   if(data){
-    localStorage.setItem("token",data.user.token)
-    
-   history('/')
-  }
+   
 if(loading) return <h3>Loading...</h3>
 
 if(error){
